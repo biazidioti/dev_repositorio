@@ -1,0 +1,9 @@
+
+# BEGIN Tainacan [<wp_upload_dir()>/tainacan] rules
+# As diretrizes (linhas) entre "BEGIN Tainacan [<wp_upload_dir()>/tainacan] rules" e "END Tainacan [<wp_upload_dir()>/tainacan] rules" são
+# geradas dinamicamente e só devem ser modificadas através de filtros do WordPress.
+# Quaisquer alterações nas diretivas entre esses marcadores serão sobrescritas.
+# Prevent direct access to files
+Order deny,allow
+Deny from all
+# END Tainacan [<wp_upload_dir()>/tainacan] rules
