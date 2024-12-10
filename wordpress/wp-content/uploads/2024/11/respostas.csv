@@ -1,0 +1,12 @@
+Nome;Definição
+Identificador da Resposta;Identificador único da resposta 
+Resumo;Sumarização do conteúdo da resposta
+Resposta ;"Resposta em campo textual (caso respondida em anexo preencher ""Respondida em anexo"""
+Embasamento legal;Portarias, Normativas, Leis, etc
+Decisão;Tipo de resposta do pedido (Respondida/Recurso/Não foi possível atender à solicitação) 
+Especificação da Decisão;Justificativa da decisão (Pergunta genérica/Processo em andamento, etc)
+Processo SEI!;Identificador único do processo SEI 
+Validações;Trâmite e Assinaturas da resposta
+Anexo (pdf);Possui anexo 
+Data da resposta;Data de envio da resposta ao solicitante (dd/mm/aaaa)
+Tempo decorrido;Descrição do prazo (dd/mm/aaaa) (tempo decorrido até a resposta) 

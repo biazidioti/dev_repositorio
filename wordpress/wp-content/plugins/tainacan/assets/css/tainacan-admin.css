@@ -19630,7 +19630,7 @@ MIT (https://github.com/Wikiki/bulma-steps/blob/master/LICENSE)
       content: 'close';
       font-size: 1em; }
     .control.has-icons-right .icon .mdi-account::before, .control.has-icons-left .icon .mdi-account::before {
-      content: 'user'; }
+      content: 'userfill'; }
     .control.has-icons-right .icon .mdi-calendar-today::before, .control.has-icons-left .icon .mdi-calendar-today::before {
       content: 'calendar'; }
   .control.has-icons-right .icon .mdi-magnify::before {
@@ -19700,12 +19700,12 @@ button.link-style:active {
     border: none !important;
     cursor: not-allowed !important;
     color: var(--tainacan-info-color) !important;
-    background-color: var(--tainacan-gray2) !important;
+    background-color: var(--tainacan-input-disabled-color, var(--tainacan-input-border-color)) !important;
     text-shadow: none !important; }
   .button.is-outlined[disabled], .button.is-outlined:hover[disabled] {
-    border: 1px solid var(--tainacan-gray2) !important;
+    border: 1px solid var(--tainacan-input-disabled-color, var(--tainacan-input-border-color)) !important;
     color: var(--tainacan-info-color) !important;
-    background-color: var(--tainacan-white) !important; }
+    background-color: var(--tainacan-input-disabled-color, var(--tainacan-input-border-color)) !important; }
   .button.is-white[disabled] {
     background-color: transparent !important;
     opacity: 0.85; }
@@ -19772,7 +19772,9 @@ kbd:focus {
       text-decoration: none !important;
       border-color: var(--tainacan-secondary) !important; }
     .select select[disabled=disabled], .select select:disabled {
-      background: var(--tainacan-gray1) !important; }
+      opacity: 0.75;
+      border-color: var(--tainacan-input-disabled-color, var(--tainacan-input-border-color));
+      background: var(--tainacan-input-disabled-color, var(--tainacan-input-border-color)) !important; }
     .select select:hover, .select select:focus {
       color: var(--tainacan-input-color) !important; }
     .select select:hover {
@@ -19799,7 +19801,6 @@ kbd:focus {
   .select optgroup,
   .select optgroup[label],
   .select optgroup::before {
-    color: var(--tainacan-gray2);
     font-weight: normal;
     font-style: italic; }
 
@@ -19983,7 +19984,9 @@ input[type="week"].input {
   input[type="url"].input[disabled],
   input[type="week"].input[disabled] {
     color: var(--tainacan-info-color) !important;
-    background-color: var(--tainacan-input-border-color) !important; }
+    opacity: 0.75;
+    border-color: var(--tainacan-input-disabled-color, var(--tainacan-input-border-color));
+    background-color: var(--tainacan-input-disabled-color, var(--tainacan-input-border-color)) !important; }
   input.input.readonly, input.input[readonly],
   .input.readonly,
   .input[readonly],
@@ -20191,6 +20194,7 @@ textarea.textarea,
   background: var(--tainacan-input-background-color); }
 .b-checkbox.checkbox input[type="checkbox"][disabled=disabled] + .check {
   border-color: var(--tainacan-input-border-color);
+  background: var(--tainacan-input-disabled-color, var(--tainacan-input-border-color));
   cursor: not-allowed; }
 .b-checkbox.checkbox:focus input[type="checkbox"] + .check, .b-checkbox.checkbox:active input[type="checkbox"] + .check, .b-checkbox.checkbox:hover input[type="checkbox"] + .check {
   box-shadow: none !important;
@@ -20231,11 +20235,9 @@ textarea.textarea,
   .switch input[type="checkbox"] + .check::before {
     background-color: var(--tainacan-gray4);
     box-shadow: none; }
-.switch:hover input[type="checkbox"]:checked + .check {
-  background-color: transparent; }
 .switch input[type="checkbox"]:checked + .check {
   border: 2px solid var(--tainacan-secondary);
-  background-color: transparent; }
+  background-color: var(--tainacan-turquoise1); }
   .switch input[type="checkbox"]:checked + .check::before {
     background-color: var(--tainacan-secondary);
     transform: translate3d(78%, 0, 0); }
@@ -20274,7 +20276,12 @@ textarea.textarea,
 .dropdown .dropdown-trigger .button.is-primary .icon, .dropdown .dropdown-trigger .button.is-secondary .icon, .dropdown .dropdown-trigger .button.is-success .icon, .autocomplete .dropdown-trigger .button.is-primary .icon, .autocomplete .dropdown-trigger .button.is-secondary .icon, .autocomplete .dropdown-trigger .button.is-success .icon {
   color: var(--tainacan-background-color); }
 .dropdown .dropdown-trigger .dropdown.is-disabled, .autocomplete .dropdown-trigger .dropdown.is-disabled {
-  cursor: default; }
+  cursor: pointer; }
+.dropdown.dropdown.is-disabled, .autocomplete.dropdown.is-disabled {
+  cursor: not-allowed;
+  opacity: 1.0; }
+  .dropdown.dropdown.is-disabled.button, .autocomplete.dropdown.is-disabled.button {
+    opacity: 0.75; }
 .dropdown .dropdown-menu, .autocomplete .dropdown-menu {
   font-size: 1em;
   padding: 0px;
@@ -21421,7 +21428,8 @@ body.tainacan-admin-page > .control.autocomplete {
   #tainacan-admin-app .repository-level-page .switch:hover input[type="checkbox"]:checked + .check {
     background-color: var(--tainacan-blue2); }
   #tainacan-admin-app .repository-level-page .switch input[type="checkbox"]:checked + .check {
-    border: 2px solid var(--tainacan-blue5); }
+    border: 2px solid var(--tainacan-blue5);
+    background-color: var(--tainacan-blue1); }
     #tainacan-admin-app .repository-level-page .switch input[type="checkbox"]:checked + .check::before {
       background-color: var(--tainacan-blue5); }
   #tainacan-admin-app .repository-level-page .switch.is-small input[type="checkbox"]:checked + .check {
@@ -21475,6 +21483,7 @@ body.tainacan-admin-page > .control.autocomplete {
   --tainacan-input-color: #1d1d1d;
   --tainacan-input-background-color: var(--tainacan-white);
   --tainacan-input-border-color: var(--tainacan-gray2);
+  --tainacan-input-disabled-color: var(--tainacan-gray1);
   --tainacan-label-color: var(--tainacan-gray5);
   --tainacan-info-color: var(--tainacan-gray4);
   --tainacan-heading-color: var(--tainacan-black);
