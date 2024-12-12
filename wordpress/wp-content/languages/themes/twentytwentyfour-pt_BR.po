@@ -28,11 +28,6 @@ msgctxt "Pattern description"
 msgid "A title, a paragraph and a CTA button on the left with an image on the right."
 msgstr "Um título, um parágrafo e um botão CTA à esquerda com uma imagem à direita."
 
-#: patterns/text-project-details.php
-msgctxt "Pattern description"
-msgid "A text only section for project details."
-msgstr "Uma seção somente de texto para detalhes do projeto."
-
 #: patterns/text-feature-grid-3-col.php
 msgctxt "Pattern description"
 msgid "A feature grid of 2 rows and 3 columns with headings and text."
@@ -42,31 +37,6 @@ msgstr "Uma grade de recursos de 2 linhas e 3 colunas com títulos e texto."
 msgctxt "Question in the FAQ pattern"
 msgid "Who is behind Études?"
 msgstr "Quem está por trás dos Études?"
-
-#: patterns/text-faq.php
-msgctxt "Pattern description"
-msgid "A FAQ section with a large FAQ heading and list of toggle questions and answers."
-msgstr "Uma seção de perguntas frequentes com um grande título e uma lista alternada de perguntas e respostas."
-
-#: patterns/text-centered-statement.php
-msgctxt "Pattern description"
-msgid "A centered text statement with a large paddings."
-msgstr "Uma declaração de texto centralizada com grandes espaçamentos."
-
-#: patterns/text-centered-statement-small.php
-msgctxt "Pattern description"
-msgid "A centered itallic text statement with compact padding."
-msgstr "Uma declaração de texto centralizada em itálico com preenchimento compacto."
-
-#: patterns/text-alternating-images.php
-msgctxt "Pattern description"
-msgid "A text section, then a two column section with text in one and image in another."
-msgstr "Uma seção de texto e então uma seção de duas colunas com texto em uma e imagem em outra."
-
-#: patterns/testimonial-centered.php
-msgctxt "Pattern description"
-msgid "A centered testimonial section with a avatar, name, and job title."
-msgstr "Uma seção de depoimentos centralizada com um avatar, nome e cargo."
 
 #: patterns/team-4-col.php
 msgctxt "Pattern description"
@@ -117,11 +87,6 @@ msgstr "Um bloco com um botão de assinatura de boletim informativo para uma pá
 msgctxt "Pattern description"
 msgid "A portfolio home page with a description and a 4-column post section with only feature images."
 msgstr "Uma página inicial de portfólio com uma descrição e uma seção de posts em 4 colunas com apenas imagens de destaque."
-
-#: patterns/page-home-portfolio-gallery.php
-msgctxt "Pattern description"
-msgid "A porfolio home page that features a gallery."
-msgstr "Uma página inicial de portfólio que apresenta uma galeria."
 
 #: patterns/page-home-business.php
 msgctxt "Pattern description"
@@ -778,6 +743,7 @@ msgid "Previous: "
 msgstr "Anterior: "
 
 #: patterns/hidden-post-navigation.php:9 patterns/hidden-post-navigation.php:10
+#: patterns/hidden-posts-heading.php:10
 #: patterns/template-index-portfolio.php:16
 msgid "Posts"
 msgstr "Posts"
@@ -1085,6 +1051,11 @@ msgctxt "Pattern title"
 msgid "Title text and button on left with image on right"
 msgstr "Texto do título e botão à esquerda com imagem à direita"
 
+#: patterns/text-project-details.php:35 patterns/text-project-details.php:43
+msgctxt "Descriptive text for the feature area"
+msgid "The revitalized Art Gallery is set to redefine the cultural landscape of Toronto, serving as a nexus of artistic expression, community engagement, and architectural marvel. The expansion and renovation project pay homage to the Art Gallery's rich history while embracing the future, ensuring that the gallery remains a beacon of inspiration."
+msgstr "A revitalizada Art Gallery está pronta para redefinir o cenário cultural de Toronto, servindo como um nexo de expressão artística, engajamento comunitário e maravilha arquitetônica. O projeto de expansão e renovação homenageia a rica história da Art Gallery ao mesmo tempo em que abraça o futuro, garantindo que a galeria continue sendo um farol de inspiração."
+
 #: patterns/text-project-details.php:27
 msgctxt "Descriptive title for the feature area"
 msgid "With meticulous attention to detail and a commitment to excellence, we create spaces that inspire, elevate, and enrich the lives of those who inhabit them."
@@ -1129,11 +1100,6 @@ msgstr "Acesso ao aplicativo"
 msgctxt "Sample feature heading"
 msgid "Continuous Support"
 msgstr "Suporte contínuo"
-
-#: patterns/text-project-details.php:35 patterns/text-project-details.php:43
-msgctxt "Descriptive text for the feature area"
-msgid "The revitalized Art Gallery is set to redefine the cultural landscape of Toronto, serving as a nexus of artistic expression, community engagement, and architectural marvel. The expansion and renovation project pay homage to the Art Gallery's rich history while embracing the future, ensuring that the gallery remains a beacon of inspiration."
-msgstr "A revitalizada Art Gallery está pronta para redefinir o cenário cultural de Toronto, servindo como um nexo de expressão artística, engajamento comunitário e maravilha arquitetônica. O projeto de expansão e renovação homenageia a rica história da Art Gallery ao mesmo tempo em que abraça o futuro, garantindo que a galeria continue sendo um farol de inspiração."
 
 #: patterns/text-feature-grid-3-col.php:43
 #: patterns/text-feature-grid-3-col.php:55
